@@ -1,0 +1,89 @@
+﻿.item:first-child {
+}
+
+.item:last-child {
+}
+
+.ring {
+ cursor: pointer;
+ transition: All 0.3s ease;
+ overflow: hidden;
+}
+
+.browserimg {
+ border: 1px solid #000;
+ text-align: center;
+ margin: auto;
+}
+
+.brwimg {
+}
+
+ .brwimg:hover {
+  cursor: pointer;
+  background-color: rgba(18,19,20,.8);
+ }
+
+.item {
+ background-color: transparent;
+ padding: 0;
+ margin: auto;
+ background-color: rgba(18,19,20,.2);
+}
+
+ .item:active {
+  border: 1px solid #000;
+  background-color: rgba(18,19,20,.2);
+ }
+
+ .item:hover {
+  border: 1px solid #000;
+  background-color: rgba(18,19,20,.2);
+  cursor: pointer;
+ }
+/*
+   .ring:hover {
+    transform:rotate(9deg) scale(1.05) translate(1px);
+    animation:colors 1s ease infinite;
+    background-size:200% 200%;
+    background-color:#663dff;
+    border:4px solid transparent;
+    animation-direction:alternate;
+    background-image:linear-gradient(319deg, #7d5fee 0%, #b72bff 33%, #ff2eb0 66%, #7eee40 100%);
+   }
+   */
+.ringbtn {
+ /* This is a very simple trick to animation a ring of colors, you should go find a library for this*/
+ transform: rotate(9deg) scale(1.05) translate(1px);
+ animation: colors 1s ease infinite;
+ background-size: 200% 200%;
+ background-color: #663dff;
+ border: 4px solid transparent;
+ animation-direction: alternate;
+ background-image: linear-gradient(319deg, #7d5fee 0%, #b72bff 33%, #ff2eb0 66%, #7eee40 100%);
+}
+
+@keyframes colors {
+ 0% {
+  background-position: 10% 0
+ }
+
+ 100% {
+  background-position: 91% 100%
+ }
+}
+.avatar {
+ background-position: top center !important;
+ background-size: cover !important;
+ background-repeat: no-repeat !important;
+ height: 100%;
+ width: 100%;
+ margin: 0 auto;
+}
+
+@media (min-width:768px) {
+ main {
+  margin: auto;
+  /* width:calc(100% - 115px);  */
+ }
+}
