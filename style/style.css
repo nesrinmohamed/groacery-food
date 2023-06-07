@@ -359,6 +359,19 @@ color: var(--light-color);
 /* ============= section products ============= */
 .products .product-slider{
     padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax(30rem , 1fr));
+    grid-gap: 10px;
+}
+.swiper-wrapper{
+    /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+
+  display: grid;
+  grid-template-columns: repeat( auto-fit , minmax(30rem , 1fr));
+  grid-gap: 10px;
 }
 .products .product-slider:first-child{
 margin-bottom: 2rem;
