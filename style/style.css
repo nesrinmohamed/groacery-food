@@ -370,7 +370,7 @@ color: var(--light-color);
   flex-wrap: wrap; */
 
   display: grid;
-  grid-template-columns: repeat( auto-fit , minmax(30rem , 1fr));
+  grid-template-columns: repeat( auto-fit , minmax(28rem , 1fr));
   grid-gap: 10px;
 }
 .products .product-slider:first-child{
